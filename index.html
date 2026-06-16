@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Khitanan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts & FontAwesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .font-aesthetic {
+            font-family: 'Caveat', cursive;
+        }
+
+        .bg-gradient-custom {
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0fdf4 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <!-- Container Utama (Maksimal seukuran layar HP) -->
+    <div
+        class="w-full max-w-md bg-gradient-custom min-h-screen shadow-2xl relative flex flex-col justify-between overflow-hidden pb-12">
+
+        <!-- Musik Latar (Ganti URL audio dengan link musik pilihanmu) -->
+        <audio id="bg-music" loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+        <button id="music-btn" onclick="toggleMusic()"
+            class="fixed top-4 right-4 z-50 bg-white/80 p-3 rounded-full shadow-lg text-emerald-600 animate-bounce">
+            <i id="music-icon" class="fas fa-play"></i>
+        </button>
+
+        <!-- SECTION 1: HERO/COVER -->
+        <header class="text-center pt-16 px-6 flex-grow flex flex-col justify-center items-center">
+            <span
+                class="text-xs uppercase tracking-widest text-emerald-600 font-semibold bg-emerald-100 px-3 py-1 rounded-full">Walimatul
+                Khitan</span>
+            <h1 class="text-4xl font-bold text-gray-800 mt-4">Undangan Khitanan</h1>
+
+            <!-- Ilustrasi/Foto Anak (Bisa diganti URL gambar asli) -->
+            <div class="my-6 relative">
+                <div class="w-44 h-44 rounded-full border-4 border-emerald-400 overflow-hidden shadow-md mx-auto">
+                    <img src="/Users/badrinteractive/Downloads/Codingan Undangan Sunat/ChatGPT Image Jun 16, 2026, 12_36_48 PM.png"
+                        alt="Foto Anak" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <h2 class="text-5xl font-aesthetic text-emerald-600 my-2">Adzakir Rachman</h2>
+            <p class="text-sm text-gray-600 px-4">Putra dari Bapak Adoddy Rachman</p>
+        </header>
+
+        <!-- Salam & Ayat -->
+        <section class="px-6 text-center my-8">
+            <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-5 shadow-sm border border-white/50">
+                <p class="text-xs italic text-gray-500 mb-2">"Fitrah itu ada lima: khitan, mencukur bulu kemaluan,
+                    mencabut bulu ketiak, memotong kuku, dan memendekkan kumis." .
+                    <br> (HR. Bukhari No. 5891, Muslim No. 257)
+                </p>
+                <p class="text-sm text-gray-700 leading-relaxed mt-4">
+                    Assalamu’alaikum Wr. Wb. Dengan memohon rahmat Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk
+                    menghadiri syukuran khitanan putra kami.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 2: COUNTDOWN -->
+        <section class="px-6 text-center my-4">
+            <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Menuju Acara:</h3>
+            <div class="grid grid-cols-4 gap-2 px-4">
+                <div class="bg-emerald-600 text-white p-2 rounded-xl shadow">
+                    <span id="days" class="block text-xl font-bold">00</span>
+                    <span class="text-[10px] uppercase">Hari</span>
+                </div>
+                <div class="bg-emerald-600 text-white p-2 rounded-xl shadow">
+                    <span id="hours" class="block text-xl font-bold">00</span>
+                    <span class="text-[10px] uppercase">Jam</span>
+                </div>
+                <div class="bg-emerald-600 text-white p-2 rounded-xl shadow">
+                    <span id="minutes" class="block text-xl font-bold">00</span>
+                    <span class="text-[10px] uppercase">Menit</span>
+                </div>
+                <div class="bg-emerald-600 text-white p-2 rounded-xl shadow">
+                    <span id="seconds" class="block text-xl font-bold">00</span>
+                    <span class="text-[10px] uppercase">Detik</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: DETAIL ACARA -->
+        <section class="px-6 my-6">
+            <div class="bg-white/90 rounded-2xl p-6 shadow-md border border-emerald-100 text-center">
+                <div class="inline-block bg-emerald-50 text-emerald-600 p-3 rounded-full mb-3">
+                    <i class="fa-solid fa-calendar-days text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-1">Pelaksanaan Acara</h3>
+                <p class="text-sm text-emerald-600 font-semibold mb-4">Jum'at, 19 Juni 2026</p>
+
+                <hr class="border-gray-200 my-2">
+
+
+
+                <hr class="border-gray-200 my-2">
+
+                <div class="mt-4">
+                    <h4 class="text-xs font-bold text-gray-500 uppercase mb-1">Lokasi Acara</h4>
+                    <p class="text-sm text-gray-700 font-medium px-2">Kp Bambu Kuning, Kec. Bojonggede, Kel. Bojong
+                        Baru, Kab. Bogor,
+                    </p>
+
+                    <!-- Tombol Google Maps -->
+                    <a href="https://maps.app.goo.gl/4jLnvS71vPdiAaSs6?g_st=ic" target="_blank"
+                        class="inline-flex items-center gap-2 mt-4 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2 rounded-full transition-all shadow shadow-emerald-300">
+                        <i class="fa-solid fa-location-dot"></i> Buka Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center px-6 mt-6">
+            <p class="text-xs text-gray-400">Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu berkenan hadir.</p>
+            <p class="text-xs font-bold text-emerald-600 mt-4 font-aesthetic text-lg">Terima Kasih</p>
+            <p class="text-[10px] text-gray-400 mt-6">&copy; 2026 - Digital Invitation</p>
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT: Logika Musik & Countdown -->
+    <script>
+        // --- LOGIKA MUSIK ---
+        const music = document.getElementById('bg-music');
+        const musicIcon = document.getElementById('music-icon');
+
+        function toggleMusic() {
+            if (music.paused) {
+                music.play();
+                musicIcon.className = "fas fa-pause";
+            } else {
+                music.pause();
+                musicIcon.className = "fas fa-play";
+            }
+        }
+
+        // --- LOGIKA COUNTDOWN ---
+        // Ganti tanggal di bawah ini sesuai tanggal acaramu (Format: Tahun, Bulan-1, Tanggal, Jam, Menit)
+        // Catatan: Bulan di JS dimulai dari 0 (Januari = 0, Juli = 6)
+        const targetDate = new Date(2026, 5, 19, 10, 00, 00).getTime();
+
+        const countdownInterval = setInterval(function () {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            // Perhitungan waktu
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            // Tampilkan hasil ke HTML
+            document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+
+            // Jika hitung mundur selesai
+            if (difference < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("minutes").innerText = "00";
+                document.getElementById("seconds").innerText = "00";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
